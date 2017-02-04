@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GE-ZZGuyz</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1 class="text-center">GE-ZZ Guyz</h1>
+        <form id="partPicker" class="well">
+          <div class="form-group" id="myMachine">
+            <select name="selectMachine">
+              <option value="MGB1">MGB 1</option>
+              <option value="MGB2">MGB 2</option>
+              <option value="MAB1">MAB 1</option>
+              <option value="MAB2">MAB 2</option>
+              <option value="FQ9">FQ9</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="needPart">
+            <select name="selectPart">
+              <option value="7ha.01.s4n">7ha.01.s4n 1144</option>
+              <option value="9ha.05.s2n">7ha.05.s2n 5522</option>
+              <option value="BBTotes">Huge Black Totes</option>
+              <option value="BTotes">Big Black Totes</option>
+              <option value="7ha.01.s3n">7ha.01.s3n</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="message">
+            <label for="message">Message: </label>
+            <input type="text" placeholder="Enter Message...(optional)" class="form-control">
+          </div>
+
+
+          <input type="submit">
+        </form>
+
+        <div id="mBack" class="hidden">
+          <h4>Message to be sent:</h4>
+          <p id="sent"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
